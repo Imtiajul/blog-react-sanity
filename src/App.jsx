@@ -6,6 +6,7 @@ import SinglePost from './pages/SinglePost'
 import Error from './pages/Error'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import SingleAuthor from './pages/SingleAuthor';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/"  element={<HomePage/>}/>
         <Route path="/blog" element={<Blog/>}/>
         <Route path="/blog/:slug" element={<SinglePost/>}/>
+        <Route path="/author/:slug" element={<SingleAuthor/>}/>
         <Route path="*" element={<Error/>}/>
       </Routes>
     </BrowserRouter>
